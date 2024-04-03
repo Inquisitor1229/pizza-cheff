@@ -1,0 +1,42 @@
+.hero {
+    margin-bottom: 160px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__title {
+    max-width: 625px;
+    margin-bottom: 60px;
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #b99150;
+}
+
+.hero__features-list {
+    margin-bottom: 60px;
+}
+
+.hero__action {
+    max-width: 120px;
+    padding: 22px 52px;
+    color: #382400;
+}
+
+.hero__photo {
+    height: 100%;
+    max-width: 43%;
+    max-height: 342px;
+    object-fit: cover;
+    aspect-ratio: auto 520 / 342;
+}
+
+@media (max-width: 768px) {
+    .hero__photo {
+        display: none;
+    }
+}

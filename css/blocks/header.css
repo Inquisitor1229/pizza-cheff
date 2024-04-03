@@ -1,0 +1,121 @@
+.header {
+    margin-bottom: 132px;
+    box-shadow: 0 3px 14px 1px rgba(152,152,152,0.2);
+}
+
+.header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+@media (max-width: 992px) {
+    .header__container {
+        gap: 5%;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.header__logo-image {
+    height: 100%;
+    width: 100%;
+    max-width: 68px;
+    max-height: 69px;
+    object-fit: cover;
+    aspect-ratio: auto 68 / 69;
+}
+
+.header__logo-text {
+    max-width: 82px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #ffc468;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .header__menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu--mobile {
+        flex-direction: column;
+        border: 1px solid black;
+        position: absolute;
+        top: 105px;
+        right: 20px;
+        background-color: white;
+        padding: 20px;
+    }
+}
+
+.header__menu--flex {
+    display: flex;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #a46b00;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.35s ease;
+}
+
+.header__menu-link:hover {
+    border-bottom-color: #a46b00;
+}
+
+.header__burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    width: 32px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 576px) {
+    .header__burger {
+        display: flex;
+    }
+}
+
+.header__burger-body {
+    height: 2px;
+    width: 32px;
+    background-color: black;
+    transition: background-color 0.4s ease;
+}

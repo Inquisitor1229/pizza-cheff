@@ -1,0 +1,12 @@
+.pizza-selection {
+    margin-bottom: 240px;
+}
+
+.pizza-selection__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: #bd985c;
+}

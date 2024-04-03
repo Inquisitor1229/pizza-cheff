@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <title>Pizza cheff</title>
+</head>
+<body>
+    <header class="header wow fadeInUp">
+        <div class="header__container container">
+            <a class="header__logo" href="javascript:void(0)">
+                <img class="header__logo-image" src="media/header__logo.svg" width="68" height="69">
+                <p class="header__logo-text">Pizza cheff</p>
+            </a>
+            <ul class="header__menu header__menu--mobile" id="header-menu">
+                <li class="header__menu-item">
+                    <a href="javascript:void(0)" class="header__menu-link">Пиццы</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="javascript:void(0)" class="header__menu-link">Напитки</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="javascript:void(0)" class="header__menu-link">Доставка и оплата</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="javascript:void(0)" class="header__menu-link">Контакты</a>
+                </li>
+            </ul>
+            <button class="header__burger" id="burger_menu_button" type="button">
+                <span class="header__burger-body"></span>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">Главная страница Pizza Cheff</h1>
+        <div class="main__container">
+            <section class="hero">
+                <div class="hero__container container">
+                    <div class="hero__body wow fadeInLeft">
+                        <h2 class="visually-hidden">О пицце</h2>
+                        <p class="hero__title">Самая вкусная пицца в мире <span class="text-orange">только в Pizza Cheff</span></p>
+                        <ul class="hero__features-list features-list">
+                            <li class="features-list__item">
+                                <img class="features-list__item-media" src="media/hero__dough.svg" width="60" height="60">
+                                <div class="features-list__item-body">
+                                    <p class="features-list__item-title">Лучшее тесто</p>
+                                    <p class="features-list__item-description">Мы создаем тесто только из отборной итальянской муки наивысшего качества</p>
+                                </div>
+                            </li>
+                            <li class="features-list__item">
+                                <img class="features-list__item-media" src="media/hero__kitchen.svg" width="60" height="60">
+                                <div class="features-list__item-body">
+                                    <p class="features-list__item-title">лучшие повара</p>
+                                    <p class="features-list__item-description">Пиццы готовят самые профессиональные итальянские повара</p>
+                                </div>
+                            </li>
+                            <li class="features-list__item">
+                                <img class="features-list__item-media" src="media/hero__quality.svg" width="60" height="60">
+                                <div class="features-list__item-body">
+                                    <p class="features-list__item-title">гарантия качества</p>
+                                    <p class="features-list__item-description">Наша пиццерия получила множество наград и признаний по всему миру</p>
+                                </div>
+                            </li>
+                            <li class="features-list__item">
+                                <img class="features-list__item-media" src="media/hero__recipes.svg" width="60" height="60">
+                                <div class="features-list__item-body">
+                                    <p class="features-list__item-title">отборные рецепты</p>
+                                    <p class="features-list__item-description">Мы используем рецепты от мировых лидеров в изготовлении пиццы</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="hero__action button button--orange" href="javascript:void(0)">Выбрать пиццу</a>
+                    </div>
+                    <img class="hero__photo wow bounceInRight" src="media/hero__pizza-big.png" width="520" height="342">
+                </div>
+            </section>
+            <section class="pizza-selection">
+                <div class="pizza-selection__container container">
+                    <h2 class="pizza-selection__title">Выберите свою любимую пиццу </h2>
+                    <ul class="pizza-selection__pizza-cards pizza-cards">
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__delux.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__delux.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Мясная Делюкс</h3>
+                                <p class="pizza-cards__item-description">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__premium.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__premium.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Морская Премиум</h3>
+                                <p class="pizza-cards__item-description">Перец, сыр, креветки, кальмары, мидии, лосось</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__bacon.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__bacon.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Бекон и Сосиски</h3>
+                                <p class="pizza-cards__item-description">Бекон, сыр, сосиски, ананас, томатная паста</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__chicken.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__chicken.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Куриная Делюкс</h3>
+                                <p class="pizza-cards__item-description">Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__bbq.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__bbq.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Барбекю Премиум</h3>
+                                <p class="pizza-cards__item-description">Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__pepperoni.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__pepperoni.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Пепперони Дабл</h3>
+                                <p class="pizza-cards__item-description">Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__chicken-trio.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__chicken-trio.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Куриное трио</h3>
+                                <p class="pizza-cards__item-description">Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="pizza-cards__item wow swing">
+                            <a class="pizza-cards__item-top" href="media/pizza-cards__cheese.png" data-fslightbox="gallery">
+                                <img class="pizza-cards__item-image" src="media/pizza-cards__cheese.png" width="214" height="152">
+                            </a>
+                            <div class="pizza-cards__item-bottom">
+                                <h3 class="pizza-cards__item-title">Сырная</h3>
+                                <p class="pizza-cards__item-description">Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</p>
+                                <button class="pizza-cards__item-button button button--orange">В корзину</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="order wow fadeInUp">
+                <div class="order__container container">
+                    <h2 class="visually-hidden">Заказать пиццу</h2>
+                    <div class="order__info">
+                        <div class="order__title-container">
+                            <p class="order__title">Хватит думать!</p>
+                            <p class="order__title order__title--brown">Доставим заказ за 30 минут!</p>
+                        </div>
+                        <p class="order__description">Мы  гарантированно доставим вашу пиццу за 30 минут с
+                            момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ
+                            бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш
+                            клиент был доволен и не остался голодный!</p>
+                    </div>
+                    <form class="order__form order-form" action="" id="order-form">
+                        <h3 class="visually-hidden">Форма заказа пиццы</h3>
+                        <fieldset class="order-form__fields">
+                            <label class="visually-hidden" for="name">Ваше имя</label>
+                            <input class="order-form__input-text" type="text" name="name" placeholder="Ваше имя" id="name" required>
+                            <label class="visually-hidden" for="address">Адрес доставки</label>
+                            <input class="order-form__input-text" type="text" name="address" placeholder="Адрес доставки" id="address" required>
+                            <label class="visually-hidden" for="phone">Телефон</label>
+                            <input class="order-form__input-text" type="tel" name="phone" placeholder="Телефон" id="phone" required pattern="[0-9+]+">
+                        </fieldset>
+                        <button class="order-form__submit button button--orange" type="submit" id="order-form-submit">Оформить заказ</button>
+                    </form>
+                    <img src="media/order__pizza.png" class="order__photo" width="410" height="454">
+                </div>
+            </section>
+        </div>
+        <div class="popup" id="popup" hidden>
+            <p>Спасибо за заказ!</p>
+        </div>
+    </main>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/vendor/fslightbox.js"></script>
+    <script defer src="js/vendor/wow.min.js"></script>
+</body>
+</html>
